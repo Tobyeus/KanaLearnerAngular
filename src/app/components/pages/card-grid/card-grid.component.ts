@@ -28,7 +28,7 @@ export class CardGridComponent implements OnInit {
         }
       })
     }
-    this.itemsToDisplay.sort(() => Math.random() - 0.5 )
+    this.itemsToDisplay.sort( () => Math.random() - 0.5 )
     this.numberOfCards = this.itemsToDisplay.length
     if( this.numberOfCards == 0){
       this.router.navigateByUrl("")
