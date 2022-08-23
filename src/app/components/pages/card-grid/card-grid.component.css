@@ -1,0 +1,25 @@
+.grid-wrapper{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.card-grid{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 0 15%;
+}
+
+.after-game-wrapper{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.after-game-wrapper h3 {
+    text-align: center;
+    margin: 20px;
+    font-family: 'Roboto', sans-serif;
+}

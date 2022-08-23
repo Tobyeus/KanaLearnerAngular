@@ -1,0 +1,23 @@
+<div class="selection-wrapper">
+    <h2>Select the alphabet you want to practise</h2>
+    <div class="alphabet-wrapper">
+        <app-choice-button-alphabet 
+            *ngFor="let item of alphabetButtons" 
+            [buttonText]="item"
+            [isSelected]="selected[item]"
+            (clickSelect)="selectAlphabet($event)"
+            >
+        </app-choice-button-alphabet>
+    </div>
+    <div class="characters-wrapper" *ngIf="selected['Hiragana'] == true || selected['Katakana']">
+        <h3>Select the character sets you want to practise</h3>
+        <div class="character-set-wrapper">
+        <app-choice-button-charset 
+            *ngFor="let item of characterSetButtons" 
+            [buttonText]="item"
+            (selectCharSet)="addCharSet($event)">
+        </app-choice-button-charset>
+        </div>
+    </div>
+    <app-start-button (click)="startQuiz()"></app-start-button>
+</div>

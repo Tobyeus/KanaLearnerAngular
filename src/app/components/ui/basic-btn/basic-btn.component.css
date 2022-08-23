@@ -1,0 +1,16 @@
+.btn-wrapper {
+    display: flex;
+    justify-content: center;
+}
+.base-btn {
+    width: auto;
+    margin: 0.5rem;
+    color: white;
+    background-color: #073b4c;
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    border-radius: 10px;
+    font-family: 'Noto Sans JP', sans-serif;
+    box-shadow: 0 0 20px 8px #d0d0d0;
+    cursor: pointer;
+}

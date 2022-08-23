@@ -1,0 +1,24 @@
+.selection-wrapper{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 20%;
+    font-family: 'Roboto', sans-serif;
+}
+
+.alphabet-wrapper{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.characters-wrapper{
+    text-align: center;
+}
+
+.character-set-wrapper{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}

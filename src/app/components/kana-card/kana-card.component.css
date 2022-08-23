@@ -1,0 +1,45 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+.kana-card{
+    width: 100px;
+    height: 125px;
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: #073b4c;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.symbol{
+    font-size: 40px;
+    color: #ffffff;
+}
+
+.input-field{
+    border: 2px solid #ffffff;
+    border-radius: 5px;
+    width: 50px;
+    height: 1.5rem;
+    text-align: center;
+}
+
+.card-correct{
+    background-color: #06d6a0;
+}
+
+.card-incorrect{
+    background-color: #ef476f;
+}
+
+.answer{
+    color: #ffffff;
+    font-size: 20px;
+    font-weight: 700;
+}

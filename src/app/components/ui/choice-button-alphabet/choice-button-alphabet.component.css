@@ -1,0 +1,25 @@
+.alphabet-btn {
+    text-align: center;
+    width: 200px;
+    margin: 1rem;
+    color: #073b4c;
+    background-color: #fff;
+    border:5px solid #073b4c;
+    padding: 0.5rem 2rem;
+    font-size: 10px;
+    font-family: 'Noto Sans JP', sans-serif;
+    box-shadow: 0 0 20px 8px #d0d0d0;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.selected {
+    color: #fff;
+    background-color: #073b4c;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+h2{
+    user-select: none;
+}

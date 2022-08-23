@@ -1,0 +1,14 @@
+<div class="grid-wrapper">
+    <div class="card-grid">
+        <app-kana-card 
+            *ngFor="let card of itemsToDisplay" 
+            [cardData]="card"
+            (cardCorrect)="correctCount()">
+        </app-kana-card>
+    </div>
+    <app-help *ngIf="!gameFinished"></app-help>
+    <div *ngIf="gameFinished" class="after-game-wrapper">
+        <h3 class="after-game-p">You have completed the Quiz.</h3>
+        <app-basic-btn [buttonText]="playAgainButton" (click)="redirectToHome()"></app-basic-btn>
+    </div>
+</div>

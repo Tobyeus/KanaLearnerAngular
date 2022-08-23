@@ -1,0 +1,15 @@
+<div 
+    class="kana-card" 
+    [class]="{ 
+        'card-correct': correct,
+        'card-incorrect': !correct && wasAnswered
+     }"
+    >
+    <h2 class="symbol">{{cardData.symbol}}</h2>
+    <input 
+        class="input-field"
+        type="text" [(ngModel)]="answer" 
+        *ngIf="!correct" 
+        (keyup.enter)="checkInput($event)">
+    <p class="answer" *ngIf="correct">{{cardData.name}}</p>
+</div>
